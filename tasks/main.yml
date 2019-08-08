@@ -8,9 +8,6 @@
   template:
     src: "{{ repository_file_template }}"
     dest: "{{ repository_file_path }}/{{ repository_file_name }}"
-#  yum:
-#    name: "{{ repository_url }}"
-#    state: present
   register: repository_configuration_result
   when: not repository_file_result.stat.exists
 
