@@ -1,5 +1,5 @@
 ---
-repository_template_file: "grafana.repo.j2"
+repository_file_template: "grafana.repo.j2"
 repository_file_path: "/etc/yum.repos.d"
 repository_file_name: "grafana.repo"
 repository_id: "grafana"
