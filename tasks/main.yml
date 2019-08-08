@@ -11,8 +11,8 @@
 #  yum:
 #    name: "{{ repository_url }}"
 #    state: present
-#  register: repository_configuration_result
-#  when: not repository_file_result.stat.exists
+  register: repository_configuration_result
+  when: not repository_file_result.stat.exists
 
 - name: "Disable Grafana repository."
   ini_file:
